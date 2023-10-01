@@ -1,0 +1,20 @@
+.Gallery {
+  background: blue;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landscape {
+  width: 40vw;
+  height: 26.67vw;
+  z-index: 1000;
+}
+
+.portrait {
+  height: 40vw;
+  z-index: 1000;
+  width: 26.67vw;
+}
