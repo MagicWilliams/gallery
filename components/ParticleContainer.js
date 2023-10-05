@@ -42,6 +42,42 @@ function ParticleContainer() {
       src: "/img/10.jpeg",
       orientation: "portrait",
     },
+    {
+      src: "/img/2.png",
+      orientation: "landscape",
+    },
+    {
+      src: "/img/3.png",
+      orientation: "landscape",
+    },
+    {
+      src: "/img/4.png",
+      orientation: "portrait",
+    },
+    {
+      src: "/img/5.png",
+      orientation: "landscape",
+    },
+    {
+      src: "/img/6.png",
+      orientation: "portrait",
+    },
+    {
+      src: "/img/7.png",
+      orientation: "landscape",
+    },
+    {
+      src: "/img/8.png",
+      orientation: "landscape",
+    },
+    {
+      src: "/img/9.png",
+      orientation: "portrait",
+    },
+    {
+      src: "/img/10.png",
+      orientation: "portrait",
+    },
   ];
 
   const blurStyles = {
@@ -66,7 +102,14 @@ function ParticleContainer() {
         {photos.map((photo, i) => {
           return <Particle key={i} photo={photo} setPopupSrc={setPopupSrc} />;
         })}
-        <h2>SANDSTORM</h2>
+        <div className={styles.text}>
+          <h2>SANDSTORM</h2>
+          <div className={styles.links}>
+            <p>VIDEO</p>
+            <p>APPLE MUSIC</p>
+            <p>SPOTIFY</p>
+          </div>
+        </div>
       </div>
     </>
   );

@@ -22,15 +22,45 @@
     rgba(196, 154, 105, 1) 100%
   );
 
-  h2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: "Abril", serif;
-    font-size: 3rem;
-    color: white;
-    text-shadow: 2px 2px 2px black;
+  .text {
+    h2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: "Abril", serif;
+      font-size: 3rem;
+      color: white;
+      text-shadow: 2px 2px 2px black;
+      z-index: 1000;
+    }
+
+    p {
+      font-family: "Abril", serif;
+      font-size: 1rem;
+      color: white;
+      text-shadow: 2px 2px 2px black;
+      z-index: 1000;
+      margin: 8px;
+      margin-right: 4px;
+    }
+
+    .links {
+      display: flex;
+      position: absolute;
+      text-transform: lowercase;
+      left: 50%;
+      z-index: 1000;
+      top: calc(50% + 48px);
+      transform: translate(-50%, -50%);
+
+      p {
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
   }
 }
 
