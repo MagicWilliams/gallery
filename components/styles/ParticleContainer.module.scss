@@ -14,13 +14,11 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background: rgb(121, 77, 44);
-  background: linear-gradient(
-    180deg,
-    rgba(228, 186, 139, 1) 0%,
-    rgba(217, 199, 158, 1) 45%,
-    rgba(196, 154, 105, 1) 100%
-  );
+  background: url("/img/bkg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
   .text {
     h2 {
